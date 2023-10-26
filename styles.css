@@ -1,0 +1,65 @@
+*{                                      /*UNIVERSAL selectors ("*")  */
+    background-color:skyblue;
+}
+.list{                                  /*CLASS selectors (".")*/
+    margin-left: 500px;
+    font-size: x-large;
+    color:rgb(62, 0, 119)
+}
+
+#para{                                  /*ID selectors ("#")*/
+    color:rgb(3, 103, 0);
+    margin-left:200px;
+    font-size: x-large;
+}
+p{                                        /* ELEMENT selectors (p)*/
+    color:rgb(3, 103, 0);
+    margin-left:200px;
+    font-size: x-large;
+}
+div h2{                                  /* DESCENDENT selector (" ")*/
+    color:orangered;
+    font-size: xx-large;
+    margin-left: 500px;
+}
+div > span{                             /* CHILD selector (">")*/
+    color:black;
+    margin-left: 500px;
+    font-size: xx-large;
+}
+p.para::first-letter{                       /*PSEUDO-ELEMENT selectors ("::")  */
+    font-size:xx-large;
+}
+::marker{
+    color: rgb(255, 111, 0);
+}
+p:hover{                                    /*PSEUDO-CLASS selectors (":") */
+    background-color: rgb(125, 221, 98);
+}
+p:first-child strong{
+    color:red;
+}
+img[src="https://img.freepik.com/premium-photo/international-sports-day-6-april_10221-18936.jpg"] /*ATTRIBUTE selectors(EQUALS "=")*/
+{
+	border-radius: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:300px;
+}
+img[src*="/Travel-Quotes"]                  /*ATTRUBUTE selectors (CONTAINS "*=")*/
+{
+	border-radius: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:300px;
+}
+img[src$="_tTdrHejeC0oNX64aEGSrc="]         /*ATTRIBUTE selectors (ENDS WITH "$=")*/
+{
+	border-radius: 40px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:300px;
+}
+img[src^="https://www.shutterstock.com"]    /*ATTRIBUTE selectors(BEGIN WITH "^=")*/
+{
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left:225px;
+}
